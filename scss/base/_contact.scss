@@ -1,0 +1,162 @@
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.contact .content {
+
+    max-width: 800px;
+    text-align: center;
+
+}
+
+.contact .content h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: rgb(250, 250, 250);
+
+
+}
+
+.contact .content p {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(156, 156, 156);
+
+
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+}
+
+.container .contactinfo {
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container .contactinfo .box {
+    position: relative;
+    padding: 20px 0;
+    display:flex;
+    color: rgb(255, 255, 255);
+}
+.container .contactinfo .box .icon {
+    min-width: 60 px;
+    height: 60 px;
+    background: #fff;
+}
+
+.contactform{
+    width: 40%;
+    padding: 40px;
+    background:  #fff;
+}
+
+.contactform{
+    font-size: 30px;
+    color:#333;
+    font-weight:500;
+}
+
+.contactform .inputbox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+.contactform .inputbox input,
+.contactform .inputbox textarea {
+    width: 100%;
+    padding:5px 0;
+    font-size: 13px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline:none ;
+    resize: none;
+
+}
+
+.contact .inputbox span {
+    position: absolute;
+    left: 0;
+    padding:5px 0;
+    font-size: 13px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox input:valid ~ span,
+.contactform .inputbox textarea:focus ~ span,
+.contactform .inputbox textarea:valid ~ span 
+{
+    color: rebeccapurple;
+    font-size: 12px;
+    transform: translate(-20px);
+}
+
+.contactform .inputbox input[
+    type="submit"]
+    {width: 100px;
+        background-color: rgb(144, 231, 224);
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        padding: 18px;
+    }
+
+.mapcontainer{
+    display: flex;
+    justify-content: center;
+}
+
+.map{
+    display: flex;
+    justify-content: center;
+}
+    
+.VS{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+}
+
+@media (max-width: 991px )
+{
+    .contact {
+        padding: 50px
+    }
+
+    .container {
+        flex-direction: column;
+    }
+    .container .contactinfo{
+        margin-bottom: 40px;
+    }
+    .container .contactinfo,
+    .contactform{
+        width:100%;
+    }
+
+}
+

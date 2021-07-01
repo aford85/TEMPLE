@@ -1,0 +1,176 @@
+/*VARIABLES TEXTO*/
+@mixin condicion ($colorIf) {
+    color: $colorIf;
+
+    @if $colorIf == yellow {
+        color: yellow;
+        font-size: 75px;
+        text-align: center;
+        font-weight:10px;
+  
+    
+
+    } @else {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+}
+.betemple-title{
+    @include condicion (yellow);
+}
+.betemple-paragraph{
+    @include condicion (white);
+
+}
+
+$tiposdetexto: (
+    color1: white,
+    color2: Yellow,
+    color3: black,
+
+    text-size1: 65px,
+    text-size2: 35px,
+    text-size4: 16px,
+    text-size3: 14px,
+
+    align-text1: center,
+    align-text2: left,
+
+    );
+
+    .title-brewery{
+        color: map-get($tiposdetexto, color2);
+        font-size: map-get($tiposdetexto, text-size1);
+        text-align: map-get($tiposdetexto, align-text1);
+        }
+        
+        
+        .text-brewery{
+            color: map-get($tiposdetexto, color1);
+            font-size: map-get($tiposdetexto, text-size3);
+            text-align: map-get($tiposdetexto, align-text1);
+        }
+        
+        .title-brewery2 {
+            color: map-get($tiposdetexto, color2);
+            font-size: map-get($tiposdetexto, align-text1);
+            text-align: map-get($tiposdetexto, align-text1);
+            margin-top: 30px;
+        }
+        
+        .card-text{
+            color: map-get($tiposdetexto, color3);
+            font-size: map-get($tiposdetexto, text-size4);
+            text-align: map-get($tiposdetexto, text-size2); 
+            align-items: center;
+        
+        
+        }
+/*TITULOS*/
+$title-size: 32px;
+$title-color: #ffff00;
+$title-padding:20px; 
+$h2-color: white;
+
+/*PARRAFOS*/
+$paragraph-size: 16px;
+$paragraph-color: rgb(187, 187, 187);
+$paragraph-pading: 5px;
+
+/*BAKGROUND COLOR*/
+body {
+    background-color:black
+}
+
+.body{
+    background-color:rgb(43, 42, 42);
+}
+
+
+
+h1{
+    font-size: $title-size;
+    color: $title-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: $title-padding;
+    animation-duration: 2s;
+    animation-name: aparecer;
+
+}
+
+@keyframes aparecer {
+
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+h3{
+    color: $h2-color;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+}
+
+p{
+    color: $paragraph-color;
+    font-size: $paragraph-size;
+    padding:$paragraph-pading;
+    align-items: center;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+/*CONTENEDOR FLEXBOX*/
+.flexbox-container{
+    display:flex;
+    justify-content: center;
+    
+    }
+
+/*PARAMETROS DE VIDEO BG*/
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+/*PARAMETROS DE IMAGEN BG*/
+.Backgound{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 400%;
+   
+}
+
+
+.nav-link{
+background-color: none;
+transition-property: all;
+transition-duration: 2s
+
+
+}
+
+.nav-link:hover{
+    transform: scale(130%);
+    color:rgb(167, 16, 109);
+    text-decoration: none;
+}
+    

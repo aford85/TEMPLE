@@ -1,0 +1,17 @@
+.flexbox{
+
+ width: 3800px;
+ position: absolute;
+ z-index: -1;
+
+}
+
+.animation{
+    
+    transform: translate(300px,100px);
+}
+@key frames translatex { }
+
+
+
+.animati on-box { animation:run steps(24) 1s infinite }

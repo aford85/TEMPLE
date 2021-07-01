@@ -1,0 +1,416 @@
+@charset "UTF-8";
+.ICON {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  padding: 200px;
+}
+
+.Entrar {
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+  width: 65px;
+  height: 5px;
+  align-items: center;
+  background-color: #90e7e0;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 15px;
+  transition-duration: 2s;
+}
+
+.boton-index {
+  color: white;
+  font-family: "Mark Pro Medium";
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  transition-property: all;
+  transition-duration: 2s;
+}
+
+.Entrar:hover {
+  color: tomato;
+  transform: scale(1.1);
+}
+
+/*CONTENEDOR FLEXBOX*/
+.flexbox-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Cerveza*/
+.Birra {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  transform: rotateZ(360deg);
+  transition-duration: 180s;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.Beer {
+  width: 100%;
+  transition-property: all;
+  transition-duration: 2s;
+}
+
+.Beer:hover {
+  transform: scale(2);
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  align-items: center;
+}
+
+/* TAMAÑO BOTONES*/
+.Boton {
+  width: 50px;
+  transition-property: all;
+  transition-duration: 1s;
+}
+
+.Boton:hover {
+  transform: scale(1.4);
+}
+
+/*VARIABLES TEXTO*/
+.betemple-title {
+  color: yellow;
+  color: yellow;
+  font-size: 75px;
+  text-align: center;
+  font-weight: 10px;
+}
+
+.betemple-paragraph {
+  color: white;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+
+.title-brewery {
+  color: Yellow;
+  font-size: 65px;
+  text-align: center;
+}
+
+.text-brewery {
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+
+.title-brewery2 {
+  color: Yellow;
+  font-size: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.card-text {
+  color: black;
+  font-size: 16px;
+  text-align: 35px;
+  align-items: center;
+}
+
+/*TITULOS*/
+/*PARRAFOS*/
+/*BAKGROUND COLOR*/
+body {
+  background-color: black;
+}
+
+.body {
+  background-color: #2b2a2a;
+}
+
+h1 {
+  font-size: 32px;
+  color: #ffff00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding: 20px;
+  animation-duration: 2s;
+  animation-name: aparecer;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+h3 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+p {
+  color: #bbbbbb;
+  font-size: 16px;
+  padding: 5px;
+  align-items: center;
+  text-align: center;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+/*CONTENEDOR FLEXBOX*/
+.flexbox-container {
+  display: flex;
+  justify-content: center;
+}
+
+/*PARAMETROS DE VIDEO BG*/
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+/*PARAMETROS DE IMAGEN BG*/
+.Backgound {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 400%;
+}
+
+.nav-link {
+  background-color: none;
+  transition-property: all;
+  transition-duration: 2s;
+}
+
+.nav-link:hover {
+  transform: scale(130%);
+  color: #a7106d;
+  text-decoration: none;
+}
+
+/*FOOTER*/
+.Footer1 {
+  width: 40%;
+}
+
+.Footer-position {
+  bottom: 0;
+  position: fixed;
+}
+
+.title-brewery {
+  color: Yellow;
+  font-size: 65px;
+}
+
+.text-brewery {
+  color: white;
+  font-size: 14px;
+}
+
+.title-brewery2 {
+  color: Yellow;
+  font-size: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.card-text {
+  color: black;
+  font-size: 16px;
+  text-align: 35px;
+  align-items: center;
+}
+
+.contact {
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact .content {
+  max-width: 800px;
+  text-align: center;
+}
+
+.contact .content h2 {
+  font-size: 36px;
+  font-weight: 500;
+  color: #fafafa;
+}
+
+.contact .content p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #9c9c9c;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.container .contactinfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .contactinfo .box {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+  color: white;
+}
+
+.container .contactinfo .box .icon {
+  min-width: 60 px;
+  height: 60 px;
+  background: #fff;
+}
+
+.contactform {
+  width: 40%;
+  padding: 40px;
+  background: #fff;
+}
+
+.contactform {
+  font-size: 30px;
+  color: #333;
+  font-weight: 500;
+}
+
+.contactform .inputbox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contactform .inputbox input,
+.contactform .inputbox textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 13px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+
+.contact .inputbox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 13px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox input:valid ~ span,
+.contactform .inputbox textarea:focus ~ span,
+.contactform .inputbox textarea:valid ~ span {
+  color: rebeccapurple;
+  font-size: 12px;
+  transform: translate(-20px);
+}
+
+.contactform .inputbox input[type=submit] {
+  width: 100px;
+  background-color: #90e7e0;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 18px;
+}
+
+.mapcontainer {
+  display: flex;
+  justify-content: center;
+}
+
+.map {
+  display: flex;
+  justify-content: center;
+}
+
+.VS {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@media (max-width: 991px) {
+  .contact {
+    padding: 50px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .container .contactinfo {
+    margin-bottom: 40px;
+  }
+
+  .container .contactinfo,
+.contactform {
+    width: 100%;
+  }
+}
+.flexbox {
+  width: 3800px;
+  position: absolute;
+  z-index: -1;
+}
+
+.animation {
+  transform: translate(300px, 100px);
+}
+
+@key frames translatex {}
+.animati on-box {
+  animation: run steps(24) 1s infinite;
+}
+
+/*# sourceMappingURL=style.css.map */

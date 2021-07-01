@@ -1,0 +1,33 @@
+
+
+
+
+
+
+.title-brewery{
+color: map-get($tiposdetexto, color2);
+font-size: map-get($tiposdetexto, text-size1);
+
+}
+
+
+.text-brewery{
+    color: map-get($tiposdetexto, color1);
+    font-size: map-get($tiposdetexto, text-size3);
+}
+
+.title-brewery2 {
+    color: map-get($tiposdetexto, color2);
+    font-size: map-get($tiposdetexto, align-text1);
+    text-align: map-get($tiposdetexto, align-text1);
+    margin-top: 30px;
+}
+
+.card-text{
+    color: map-get($tiposdetexto, color3);
+    font-size: map-get($tiposdetexto, text-size4);
+    text-align: map-get($tiposdetexto, text-size2); 
+    align-items: center;
+
+
+}

@@ -1,0 +1,12 @@
+/*CONTENEDOR FLEXBOX*/
+
+%Flexbox {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexbox-container{
+    @extend %Flexbox
+    
+    }

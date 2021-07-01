@@ -1,0 +1,45 @@
+/*Cerveza*/
+.Birra{
+    display: flex;
+    justify-content:space-around;
+    padding: 10px;
+    transform: rotateZ(360deg);
+    transition-duration: 180s;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.Beer{
+width: 100%;
+transition-property: all;
+transition-duration: 2s ;
+
+}
+
+.Beer:hover{
+    transform: scale(2);
+}
+
+
+.menu-container{
+    display: flex;
+    justify-content: center;
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    align-items: center;
+}
+
+/* TAMAÑO BOTONES*/
+.Boton{
+    width: 50px;
+    transition-property: all;
+    transition-duration: 1s ;   
+
+}
+
+.Boton:hover{
+    transform: scale(1.4);
+}
