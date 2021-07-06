@@ -2,7 +2,7 @@
 .Birra{
     display: flex;
     justify-content:space-around;
-    padding: 10px;
+    padding: 5px;
     transform: rotateZ(360deg);
     transition-duration: 180s;
     margin-left: 60px;
@@ -42,4 +42,54 @@ transition-duration: 2s ;
 
 .Boton:hover{
     transform: scale(1.4);
+}
+
+@media only screen and (max-width:480px) {
+    .Boton{
+        width: 30px;
+        transition-property: all;
+        transition-duration: 1s ;   
+    
+    }
+    
+    .Boton:hover{
+        transform: scale(1.4);
+    }
+    
+
+.Birra{
+    display: flex;
+    justify-content:space-around;
+    padding: 0px;
+    transform: rotateZ(360deg);
+    transition-duration: 180s;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.Beer{
+width: 600%;
+transition-property: all;
+transition-duration: 2s ;
+
+}
+
+.Beer:hover{
+    transform: scale(2);
+}
+
+
+.menu-container{
+    display: flex;
+    justify-content: center;
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+}
+
+
+
 }

@@ -1,3 +1,12 @@
+.map{
+width: 100%;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+}
+
 .contact{
     position: relative;
     min-height: 100vh;
@@ -26,7 +35,7 @@
 .contact .content p {
     font-size: 16px;
     font-weight: 500;
-    color: rgb(156, 156, 156);
+    color: rgb(255, 255, 255);
 
 
 }
@@ -160,3 +169,6 @@
 
 }
 
+.map{
+    width: 50%;
+    }

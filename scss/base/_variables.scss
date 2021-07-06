@@ -1,3 +1,6 @@
+
+
+
 /*VARIABLES TEXTO*/
 @mixin condicion ($colorIf) {
     color: $colorIf;
@@ -7,15 +10,35 @@
         font-size: 75px;
         text-align: center;
         font-weight:10px;
+        font-family: "Mark Pro Medium";
   
     
 
-    } @else {
+    } @else if $colorIf {
+    
     color: white;
     font-size: 16px;
     text-align: center;
+    margin-bottom: 50px;
+    padding: 0px;
+
+    
+
+    } 
+     @else if $colorIf {
+        color: rgb(5, 5, 5);
+        font-size: 16px;
+        text-align: center
+    } 
+     @else {
+        color: green;
+        font-size: 9px;
+        text-align: center;
+        opacity: 0.5;
+    }
+
 }
-}
+
 .betemple-title{
     @include condicion (yellow);
 }
@@ -68,7 +91,7 @@ $tiposdetexto: (
         
         }
 /*TITULOS*/
-$title-size: 32px;
+$title-size: 32em ;
 $title-color: #ffff00;
 $title-padding:20px; 
 $h2-color: white;
@@ -142,11 +165,12 @@ p{
 
 /*PARAMETROS DE VIDEO BG*/
 video {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: -1;
     opacity: 0.2;
+    object-fit: cover;
 }
 
 /*PARAMETROS DE IMAGEN BG*/
@@ -174,3 +198,69 @@ transition-duration: 2s
     text-decoration: none;
 }
     
+
+@media only screen and (max-width:480px) {
+
+
+    @mixin condicion ($colorIf) {
+        color: $colorIf;
+    
+        @if $colorIf == yellow {
+            color: yellow;
+            font-size: 45px;
+            text-align: center;
+            font-weight:10px;
+      
+        
+    
+        } @else if $colorIf {
+        color: white;
+        font-size: 13px;
+        text-align: center;
+        margin-bottom: 50px;
+        max-width: 800px;
+        
+    
+        } 
+         @else if $colorIf {
+            color: rgb(5, 5, 5);
+            font-size: 16px;
+            text-align: center
+        } 
+         @else {
+            color: green;
+            font-size: 9px;
+            text-align: center;
+            opacity: 0.5;
+        }
+    
+    }
+    
+    .betemple-title{
+        @include condicion (yellow);
+    }
+    .betemple-paragraph{
+        @include condicion (white);
+    
+    }
+
+
+
+    .Backgound{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+       
+    }
+    p{
+        color: $paragraph-color;
+        font-size: $paragraph-size;
+        padding:$paragraph-pading;
+        align-items: center;
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}

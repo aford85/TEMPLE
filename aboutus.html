@@ -29,7 +29,7 @@
             }
 
         footer{
-            background:#363636;
+            background: none;
             
         }
         a:link{
@@ -65,29 +65,41 @@
 
 <body class="body">
 
+    
     <!--HEADER-->
-    <header class="body">
-        <ul class="nav justify-content-center p-4 text-white">
-            <li class="nav-item display-7 ">
-                <a class="nav-link text-white" href="brewery.html">BREWERY</a>
-            </li>
-            <li class="nav-item display-7">
-                <a class="nav-link text-white" aria-current="page" href="index.html">TEMPLE </a>
-            </li>
-            <li class="nav-item display-7">
-                <a class="nav-link text-white" href="scottish.html">BIRRAS</a>
-            </li>
-            <li class="nav-item display-7">
-                <a class="nav-link text-white" href="contacto.html" tabindex="-1" aria-disabled="true">CONTACTO</a>
-            </li>
-            <li class="nav-item display-7">
-                <a class="nav-link text-white" href="sustentabilidad.html" tabindex="-1" aria-disabled="true">SUSTENTABILIDAD</a>
-            </li>
-            <li class="nav-item display-7">
-                <a class="nav-link text-white" href="aboutus.html" tabindex="-1" aria-disabled="true">BE TEMPLE</a>
-            </li>
-        </ul>
-    </header>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid nav">
+              <a class="navbar-brand" href="#"> </a>
+                <img src="images/icono.png" alt="">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center p-4 text-white" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item display-7">
+                    <a class="nav-link text-white" aria-current="page" href="index.html">TEMPLE</a>
+                  </li>
+                  <li class="nav-item display-7">
+                    <a class="nav-link text-white" href="wolfipa.html">BIRRAS</a>
+                  </li>
+                  <li class="nav-item display-7">
+                    <a class="nav-link text-white" href="brewery.html">BREWERY</a>
+                  </li>
+                  <li class="nav-item display-7">
+                    <a class="nav-link text-white" href="aboutus.html">BE TEMPLE</a>
+                  </li>
+                  <li class="nav-item display-7">
+                    <a class="nav-link text-white" href="sustentabilidad.html">SUTENTABILIDAD</a>
+                  </li>
+                  <li class="nav-item display-7">
+                    <a class="nav-link text-white" href="contacto.html">CONTACTO</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+      </header>
        <!--Carousel-->
     <div id="carouselExampleControls" class="carousel slide pb-3" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -131,36 +143,37 @@
         </p>
     
        <!--FOOTER-->
-   <footer class="Footer-position">
-    <div class="container padding: 30px 0;" >
-        
-        <a href="https://www.facebook.com/TempleBrewery">
-            <img src="images/FBicon.png" alt="facebook icon" class="Footer1">
-        <a href="https://www.instagram.com/cervezas.temple/">
-            <img src="images/IG icon.png" alt="instagram icon" class="Footer1">
-        </a>
-
-        <a href="https://www.youtube.com/channel/UClvATPUZJ_U6uqCF_pDfqDQ">
-            <img src="images/Yticon.png" alt="youtube icon" class="Footer1">
-        </a>
-
-        <a href="https://www.youtube.com/channel/UClvATPUZJ_U6uqCF_pDfqDQ">
-            <img src="images/Tw icon.png" alt="tweeter icon" class="Footer1">
-        </a>
-    </div>
   
-    </div>
-    <div style="background: none;">
-        <p style="color: #ffffff; padding: 0px 0;">
-            &copy; 2021 Copyright: <a href="contacto.html">TEMPLE</a>
-        </p>
-    </div>
+        <footer>
+        <div class="container d-flex justify-content-center align-content-center ml-8" >
+            
+            <a href="https://www.facebook.com/TempleBrewery">
+                <img src="images/FBicon.png" alt="facebook icon" class="Footer1">
+            <a href="https://www.instagram.com/cervezas.temple/">
+                <img src="images/IG icon.png" alt="instagram icon" class="Footer1">
+            </a>
 
-    <div style="background: none;">
-        <p style="color: #999999; padding: 0px 0; align=center">
-            Prohibida su venta a menores de 18 años
-        </p>
-</footer>
+            <a href="https://www.youtube.com/channel/UClvATPUZJ_U6uqCF_pDfqDQ">
+                <img src="images/Yticon.png" alt="youtube icon" class="Footer1">
+            </a>
+
+            <a href="https://www.youtube.com/channel/UClvATPUZJ_U6uqCF_pDfqDQ">
+                <img src="images/Tw icon.png" alt="twiter icon" class="Footer1">
+            </a>
+        </div>
+
+        </div>
+        <div class="container d-flex justify-content-center align-content-center mt-3">
+            <p style="color: #ffffff ">
+                &copy; 2021 Copyright: <a href="contacto.html">TEMPLE</a>
+            </p>
+        </div>
+
+        <div class="container d-flex justify-content-center align-content-center mt-1">
+            <p style="color: #999999; align=center">
+                Prohibida su venta a menores de 18 años
+            </p>
+        </footer>
   
 
     <!--BACKGROUND-->
