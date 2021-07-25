@@ -10,7 +10,7 @@ width: 100%;
 .contact{
     position: relative;
     min-height: 100vh;
-    padding: 50px 100px;
+   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,9 +61,9 @@ width: 100%;
     position: relative;
     padding: 20px 0;
     display:flex;
-    color: rgb(255, 255, 255);
+    color: rgb(43, 38, 38);
 }
-.container .contactinfo .box .icon {
+.container .contactinfo .box .icon3 {
     min-width: 60 px;
     height: 60 px;
     background: #fff;
@@ -150,7 +150,7 @@ width: 100%;
 
 }
 
-@media (max-width: 991px )
+@media (max-width: 480px )
 {
     .contact {
         padding: 50px

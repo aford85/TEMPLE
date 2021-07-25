@@ -1,7 +1,7 @@
 
 
 .ICON{
-    width: 200px;
+    width: 600px;
     display: flex;
     justify-content: space-around;
     padding: 200px;
@@ -43,7 +43,7 @@
     @media only screen and (max-width:480px) { 
     
         .ICON{
-            width: 100px;
+            width: 350px;
             display: flex;
             justify-content: space-around;
             padding: 100px;
